@@ -9,7 +9,7 @@ public class Deck {
 
     public boolean emptyDeck(){
         for (int i = 0; i < this.deck.length; i++){
-            if (deck[i] == true){
+            if (this.deck[i] == true){
                 return false;
             }
         }
