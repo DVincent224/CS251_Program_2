@@ -3,7 +3,7 @@ public class DeckDriver {
         final int cardsPerRow = 8;
         int cardsThisRow = 0;
         int myCard;
-        Deck myDeck = new Deck();
+        SmartDeck myDeck = new SmartDeck();
         myDeck.initDeck();
         System.out.println("\nHere is a shuffled deck ...\n");
         while (!(myDeck.emptyDeck())){
@@ -16,9 +16,10 @@ public class DeckDriver {
             else{
                 System.out.println("");
                 cardsThisRow = 1;
-                Deck.cardToString(myCard);
-
+                System.out.print(Deck.cardToString(myCard));
+                System.out.print(" ");
             }
         }
+        System.out.println('\n');
     }
 }
